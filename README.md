@@ -23,3 +23,11 @@
     - Window size may either increase or close, in which case a new window is created.
     - Useful for keeping track of a subset of data inside an array/string.
     - Ex. MaxSubArray
+
+# October 20
+    - Worked on anyDuplicates questions using both the charMap method and pointer method.
+        - Feeling good about charMaps, but pointer method needs work.
+    - Started Recursion Module
+        - As functions are invoked, they are added to the top of the call stack.
+        - They are popped off one at a time from the top as they are completed.
+    - Practiced Two Pointer method w/ isSubsequence. Was able to figure it out on my own but took a while.
