@@ -31,3 +31,8 @@
         - As functions are invoked, they are added to the top of the call stack.
         - They are popped off one at a time from the top as they are completed.
     - Practiced Two Pointer method w/ isSubsequence. Was able to figure it out on my own but took a while.
+    - May want to work more on sliding windows tomorrow.
+
+# October 21
+    - Finish Recursion module
+    - Learn about Linear Search
