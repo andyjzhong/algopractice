@@ -36,3 +36,4 @@
 # October 21
     - Finish Recursion module
     - Learn about Linear Search
+    - Struggled a little bit with recursion - power.js, but did well with factorial.
