@@ -1,13 +1,13 @@
 // Remember: arguments is a JS object.
 
-function areThereDuplicates(arg) {
+function areThereDuplicates(args) {
     let charMap = {}
 
-    for (let item of arguments) {
-        !charMap[arguments[item]] ? charMap[arguments[item]] = 1 : charMap[arguments[item]]++
+    for (let i = 0; i < arguments.length; i++) {
+        !charMap[arguments[i]]
+            ? charMap[arguments[i]] = 1
+            : charMap[arguments[i]]++
     }
-
-    console.log(charMap)
 
     for (let key in charMap) {
         if (charMap[key] > 1) {

@@ -1,30 +1,20 @@
-// [-1, 0, 3, 4, 5, 6]       Avg: 4.1
-
-function averagePair(arr, avg) {
-
-    if (arr.length === 0) {
-        return false
-    }
-
+function averagePair(arr, target) {
     let left = 0
     let right = arr.length - 1
 
     while (left < right) {
-        // if the calc'ed avg is less than target, that means we need bigger numbers
-        if ((arr[left] + arr[right] / 2) < avg ) {
-            left++
-        // if the calc'ed avg is more than target, that means we need smaller numbers
-        } else if ((arr[left] + arr[right] / 2) > avg) {
-            right--
-        } else {
+        let avg = (arr[left] + arr[right]) / 2
+
+        if (avg === target) {
             return true
+        } else if (avg < target) {
+            left++
+        } else if (avg > target) {
+            right--
         }
     }
 
     return false
 }
 
-
-console.log(averagePair([1, 2, 3], 2)) // true
-console.log(averagePair([-1, 0, 3, 4, 5, 6], 4.1)) // false
-console.log(averagePair([], 4)) // false
+console.log(averagePair([1,3,3,5,6,7,10,12,19], 8)) // true

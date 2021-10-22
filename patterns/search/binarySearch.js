@@ -4,6 +4,7 @@ function binarySearch(arr, value) {
     let right = arr.length - 1
     let middle = Math.floor((left + right) / 2)
 
+    // I don't get why the need for the second check tho.
     while (arr[middle] !== value && left <= right) {
         if (value < arr[middle]) right = middle - 1
         else left = middle + 1

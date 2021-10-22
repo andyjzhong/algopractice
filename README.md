@@ -35,5 +35,9 @@
 
 # October 21
     - Finish Recursion module
-    - Learn about Linear Search
-    - Struggled a little bit with recursion - power.js, but did well with factorial.
+    - Learn about Linear Search and Binary Search
+    - Struggled a little bit with recursion - power.js, but did well with factorial and productOfArray.
+    - Reviewed Two-Pointers and Sliding Windows
+
+# October 22
+    - Practice Frequency Counter and Two Pointer problems.
