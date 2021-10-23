@@ -17,6 +17,11 @@
 // Return maxSum
 
 
+
+    for (let i = target; i < arr.length; i++) {
+        tempSum = tempSum + arr[i]
+    }
+
 function maxSubarraySum(arr, num){
     let maxSum = 0
     let tempSum = 0
