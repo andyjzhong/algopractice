@@ -84,13 +84,38 @@ class LinkedList {
         this.length++
         return this
     }
+
+    get(index) {
+        if (index < 0 || index >= this.length) return null
+
+        let count = 0
+        let current = this.head
+
+        while (count !== index) {
+            current = current.next
+            count++
+        }
+
+        return current
+    }
+
+    set(index, val) {
+        let foundNode = this.get(index)
+
+        if(foundNode) {
+            foundNode.val = val
+            return true
+        }
+
+        return false
+    }
 }
 
 let list = new LinkedList()
 
-list.push("3")
-list.push("4")
-list.push("5")
-list.pop()
-list.shift()
-list.unshift("10")
+// list.push("3")
+// list.push("4")
+// list.push("5")
+// list.pop()
+// list.shift()
+// list.unshift("10")
