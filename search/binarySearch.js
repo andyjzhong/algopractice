@@ -15,21 +15,3 @@ function binarySearch(arr, value) {
 }
 
 console.log(binarySearch([3, 13, 23, 34, 39, 50, 90], 50)) // 5
-
-
-
-
-    while (arr[middle] !== target) {
-        // middle = Math.floor((start + end) / 2)
-
-        if (arr[middle] < target) {
-            start = middle + 1
-        } else if (arr[middle] > target) {
-            end = middle - 1
-
-    }
-
-    middle = Math.floor((start + end) / 2)
-
-    return -1
-}
