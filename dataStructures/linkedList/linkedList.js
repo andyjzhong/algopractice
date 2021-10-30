@@ -109,6 +109,20 @@ class LinkedList {
 
         return false
     }
+
+    insert(index, value) {
+       if (index < 0 || index > this.length) return false
+       if (index === 0) !!this.unshift(value)
+       if (index === this.length - 1) !!this.push(value)
+
+       let newNode = new Node(value)
+       let leftNode = this.get(index - 1)
+       let rightNode = this.get(index)
+       leftNode.next = newNode
+       newNode.next = rightNode
+       this.length++
+       return true
+   }
 }
 
 let list = new LinkedList()
