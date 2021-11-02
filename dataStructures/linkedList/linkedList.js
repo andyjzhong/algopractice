@@ -110,12 +110,12 @@ class LinkedList {
         return false
     }
 
-    insert(index, value) {
+    insert(index, val) {
        if (index < 0 || index > this.length) return false
-       if (index === 0) !!this.unshift(value)
-       if (index === this.length - 1) !!this.push(value)
+       if (index === 0) !!this.unshift(val)
+       if (index === this.length - 1) !!this.push(val)
 
-       let newNode = new Node(value)
+       let newNode = new Node(val)
        let leftNode = this.get(index - 1)
        let rightNode = this.get(index)
        leftNode.next = newNode
